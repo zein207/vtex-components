@@ -1,0 +1,16 @@
+// "FloatingButtonContainer"
+@include handleModifier('FloatingButtonContainer') {
+    $handleModifier: 'FloatingButtonContainer';
+
+    // flexRow
+    @at-root
+    .flexRow--#{$handleModifier}{
+        position: fixed;
+        bottom: 9px;
+        right: 12rem;
+
+        @include mediaTo(md) {
+            right: 10.5rem;
+        }
+    }
+}

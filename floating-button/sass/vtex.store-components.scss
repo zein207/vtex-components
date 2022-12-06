@@ -1,0 +1,15 @@
+// "FloatingButton"
+@include handleModifier('FloatingButton') {
+    $handleModifier: 'FloatingButton';
+
+    // imageElement
+    @at-root
+    .imageElement--#{$handleModifier}{
+        transition-property: filter;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        &:hover {
+            filter: drop-shadow(-2px 5px 2px #333);
+        }
+    }
+}

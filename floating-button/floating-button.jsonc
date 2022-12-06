@@ -1,0 +1,20 @@
+{
+    "flex-layout.row#FloatingButtonContainer": {
+        "props": {
+            "blockClass": ["FloatingButtonContainer"]
+        },
+        "children": [
+            "image#FloatingButton"
+        ]
+    },
+    "image#FloatingButton": {
+        "props": {
+            "blockClass": "FloatingButton",
+            "maxHeight": 60,
+            "src": "/arquivos/icon-whatsapp.svg",
+            "link": {
+                "url": "#"
+            }
+        }
+    }
+}
